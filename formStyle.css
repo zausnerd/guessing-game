@@ -1,0 +1,77 @@
+body {
+	background-color: #F6F6F7;
+	color: #21292F;
+	font: 1em roboto, sans-serif;
+}
+form {
+	margin: 2em auto;
+	width: 24em;
+	padding: 2em;
+	border-radius: 1em;
+	background-color: #EAEAEA;
+}
+
+div#welcome {
+	width: 13.35em;
+	text-align: center;
+	font-size: 1.8em;
+	margin-bottom: 0.5em;
+	font-weight: 600;
+}
+img#question {
+	width: 100%;
+}
+form#game div.input {
+	width: 22em;
+	margin-top: 0.5em;
+}
+/* structure#id structure.class structure */
+form#game div.input label {
+	display: inline-block;
+	text-align: left;
+	width: 7em;
+	margin-left: 2.2em;
+	padding: 0.6em 0;
+
+}
+form#game div.input input {
+	font: 1em sans-serif;
+	width: 11.45em;
+	padding: 0.1em 0.4em;	
+}
+
+div#buttons {
+	margin: 2em;
+	width: 20em;
+}
+
+button#submit {
+	display: block;
+	width: 100%;
+	height: 2em;
+	font-size: 1.6em;
+}
+
+div#buttons button.bottom {
+	margin: 0em;
+}
+
+div#buttons button#hint {
+	width: 25%;
+}
+
+div#buttons button#reset {
+	width: 25%;
+}
+
+div#buttons button#numberwang {
+	width: 50%;
+}
+
+div#notification {
+	width:22em;
+	text-align: center;
+	padding: 1em;
+	margin-top: 2em;
+}
+
