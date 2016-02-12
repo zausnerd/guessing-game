@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Guessing game</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="formStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src='guessingGame.js'></script>
+
 </head>
 <body>
-	<form id="game">
+	<form id="game" onsubmit="return false">
 		<div id="welcome">
 		WELCOME TO GUESS THE NUMBER
 		</div>
 		<img src="photos/question.png" id="question"/>
 		<div class="input">
-			<label for="name">Enter Name: </label>
-			<input type="text" id = "name" placeholder="type your name!"/>
-		</div>
-		<div class="input">
 			<label for="guess">Enter number:</label>
-			<input type="text" id="guess" placeholder="type your guess!"/>
+			<input type="text" id="guess" placeholder="Between 1-100"/>
 		</div>
 		<div id="buttons">
-				<button id="submit">Submit your guess</button>
-				<button id="hint" class="bottom">Hint!</button><button id="reset" class="bottom">Reset!</button><button id="numberwang" class="bottom">NumberWang!</button>
+			<button id="submit">Submit your guess</button>
+			<button id="hint" class="bottom">Hint!</button><button id="reset" class="bottom">Reset!</button><button id="numberwang" class="bottom">NumberWang!</button>
 		</div>
 		<div id="notification">
-			EXAMPLE TEXT HERE
+			Enter a number between 1-100!<br>
+			Exclamation points!!!
+		</div>
+		<img src="photos/winningLarry.gif" id="winnerGif"/>
+		<div id="statusBoard">
+			Previous Guess: <span id ="previousGuesses"></span><br>
+			Remaining: <span id ="remaining">5</span>
 		</div>
 	</form>
 </body>

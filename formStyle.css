@@ -74,4 +74,13 @@ div#notification {
 	padding: 1em;
 	margin-top: 2em;
 }
+div#statusBoard {
+	width:100%;
+	text-align: center;
+	margin-top: 1em;
+}
 
+img#winnerGif {
+	width: 100%;
+	display:none;
+}
