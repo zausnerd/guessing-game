@@ -110,6 +110,9 @@ playerStats.prototype.numberWang = function() {
 
 playerStats.prototype.playAgain = function() {
 	alert("Jeez, you like this game that much? Really? Well.. ok then ")	
+	if (this.correctGuess) {
+		$('#winnerGif').animate({opacity:'toggle',height:'toggle'});
+	}
 	this.playerGuess = 0;
 	this.guessList = [];
 	this.numGuesses = 0;
@@ -120,7 +123,7 @@ playerStats.prototype.playAgain = function() {
 			+ 'Exclamation points!!!');
 	$('#previousGuesses').text('');
 	$('#remaining').text('5');
-	$('#winnerGif').animate({opacity:'toggle',height:'toggle'});
+	
 };
 	
 // int main()
